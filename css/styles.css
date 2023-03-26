@@ -1,0 +1,393 @@
+/* Global styles */
+* {
+  margin: 0;
+  padding: 0;
+}
+*, *:after, *:before {
+    box-sizing: border-box;
+}
+
+/* header styles */
+.main {
+    font-family: 'Raleway', Arial, sans-serif;
+    position: relative;
+    background: url(../img/background.png) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+.main .logo {
+    display: flex;
+    justify-content: space-around;
+}
+.main .text-blog {
+    margin-left: 15px;
+}
+.main .text-blog p {
+    font-weight: 400;
+}
+.main .text-blog span {
+    font-weight: 700;
+}
+header {
+    padding-top: 5vh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+
+nav {
+    width: 33%;
+    margin: 0 auto;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    font-size: 15px;
+
+}
+ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.5s;
+    font-weight: 400;
+}
+ul li a:hover {
+    color: #061e37;
+}
+.header-overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(-53deg, #00b8d4 0%, #1de9b6 100%);
+    opacity: 0.9;
+}
+.block-btn .sign {
+    border: none;
+    background-color: none;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 13px;
+    font-weight: 400;
+    cursor: pointer;
+    border: 1px solid #fff;
+    padding: 5px 20px;
+    transition: 0.5s;
+    font-family: Raleway;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.block-btn .sign:hover {
+    background-color: #fff;
+    color: #061e37;
+}
+.header-bottom {
+    width: 90%;
+    position: relative;
+    margin: 15vh auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50%;
+    color: #fff;
+}
+.header-bottom .block-about {
+    width: 40%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.header-bottom .block-about h2 {
+    font-size: 55px;
+    font-weight: bold;
+    line-height: 65px;
+    text-transform: uppercase;
+}
+.header-bottom .block-about span {
+    font-family: Raleway;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.header-bottom .block-about .block-btns a {
+    /*  Сделать блочными при адаптации*/
+    display: inline-block;
+    padding: 15px 35px;
+    border: none;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.header-bottom .block-about .block-btns a:first-child {
+    background-color: #061e37;
+    margin-right: 15px;
+}
+.header-bottom .block-about .block-btns a:last-child {
+    color: #061e37;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+.header-bottom .block-video {
+    text-align: center;
+    position: relative;
+    background: url(../img/video-bg.png) no-repeat center;
+    -webkit-background-size: cover;
+    background-size: cover;
+    width: 40%;
+    height: 100%;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.play {
+    cursor: pointer;
+}
+.play i {
+    padding: 2vh 2vw;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background-color: #061e37;
+    color: #ffffff;
+    font-size: 50px;
+}
+.play p {
+    margin-top: 1rem;
+    color: #061e37;
+    font-family: Raleway;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+/* Section easy */
+.easy {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    background-color: #fff;
+}
+.easy .text-block {
+    position: relative;
+    margin-top: 10vh;
+    min-height: 10vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.easy .text-block h2 {
+    color: #061e37;
+    font-family: "Raleway - Semi Bold", sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+.easy .text-block p {
+    color: #b0bec5;
+    font-family: "Raleway - Semi Bold";
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.easy .text-block span {
+    color: #b0bec5;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.items {
+    width: 90%;
+    margin: 5vh auto;
+    display: flex;
+    justify-content: space-between;
+}
+.item {
+    text-align: center;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.item p {
+    color: #061e37;
+    font-family: "Raleway";
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.item span {
+    color: #78909c;
+    font-family: "Raleway";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 20px;
+}
+.item .icon {
+    line-height: 25px;
+}
+.btn-to-center {
+    margin: 5vh auto;
+}
+.get-started-btn {
+    display: block;
+    text-decoration: none;
+    padding: 15px 15px;
+    color: #ffffff;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    background-color: #1de9b6;
+    transition: .3s;
+}
+.get-started-btn:hover {
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    color: #1de9b6;
+    background-color: #fff;
+}
+.info {
+    width: 100%;
+    min-height: 15vh;
+    display: flex;
+    color: #fff;
+    font-family: "Raleway";
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 25px;
+}
+.info .icon {
+    display: flex;
+    justify-content: flex-end;
+    width: 40%;
+}
+.info .info-text-content {
+    padding-left: 5%;
+    width: 60%;
+}
+.info-item-business {
+    background-color: #80d8ff;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-item-download {
+    background-color: #82b1ff;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.info-item-free {
+    background-color: #b388ff;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.info-item-pro {
+    background-color: #ea80fc;
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/* section Services */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.services .services-text-block {
+    padding-top: 6vh;
+    text-align: center;
+}
+.services .services-text-block h2 {
+    color: #061e37;
+    font-family: sans-serif;
+    font-size: 45px;
+    font-weight: 400;
+}
+.services .services-text-block p {
+    color: #b0bec5;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+/* Аккардион */
+.services article {
+    width: 50vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+}
+.services .wrapper-accard {
+    width: 50vw;
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.services .item-header {
+    color: #061e37;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 15px;
+    position: relative;
+    cursor: pointer;
+}
+.services .item-header i {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    font-size: 20px;
+    color: #061e37;
+}
+.services .accard-item {
+    position: relative;
+    width: 50vw;
+    border-radius: 5px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2vh;
+}
+.services article .article-info{
+    width: 70%;
+    color: #061e37;
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    /* Text style for "Lorem ipsu" */
+    letter-spacing: 0.45px;
+}
